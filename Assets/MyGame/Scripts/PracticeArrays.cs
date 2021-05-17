@@ -43,6 +43,7 @@ public class PracticeArrays : MonoBehaviour
         Debug.Log("Element 0 von array4 hat den Wert " + array4[array4.Length - 1]);
         Debug.Log("Name letztes GO: " + arrayColloredIamgesRed[arrayColloredIamgesRed.Length - 1].name);
 
+        PrintElemnts(array4);
     }
 
     // Update is called once per frame
@@ -50,4 +51,21 @@ public class PracticeArrays : MonoBehaviour
     {
         
     }
+    public void PrintElemnts(string[] stringArray)
+    {
+        for (int i = 0; i < stringArray.Length; i++)
+        {
+            Debug.Log("Eement Nummer: " + i + "hatt den Wert:" + stringArray[i]);
+        }
+
+
+
+        //Debug.Log("Eement Nummer: " + string.[]);
+
+
+
+    }
+
+
+
 }
