@@ -15,7 +15,7 @@ public class PracticeArrays : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(arrayColloredIamgesRed);
+        
 
 
         for (int i = 0; i < array4.Length; i++)
@@ -26,6 +26,10 @@ public class PracticeArrays : MonoBehaviour
 
         arrayColloredIamgesRed = GameObject.FindGameObjectsWithTag("RedImage");
 
+        foreach(GameObject elem in arrayColloredIamgesRed)
+        {
+            Debug.Log(elem.name);
+        }
         //for (int i = 0; i < arrayColloredIamgesRed.Length; i++)
         //{
             
@@ -37,10 +41,10 @@ public class PracticeArrays : MonoBehaviour
         Debug.Log("Element 0 von array4 hat den Wert " + array4[0]);
         Debug.Log("Name erstes GO: " + arrayColloredIamgesRed[0].name);
 
-        Debug.Log("Element 0 von array1 hat den Wert " + array1[array1.Length-1]);
-        Debug.Log("Element 0 von array2 hat den Wert " + array2[array2.Length - 1]);
-        Debug.Log("Element 0 von array3 hat den Wert " + array3[array3.Length - 1]);
-        Debug.Log("Element 0 von array4 hat den Wert " + array4[array4.Length - 1]);
+        Debug.Log("Das letzte Element von array1 hatt den Wert: " + array1[array1.Length-1]);
+        Debug.Log("Das letzte Element von array2 hatt den Wert: " + array2[array2.Length - 1]);
+        Debug.Log("Das letzte Element von array3 hatt den Wert: " + array3[array3.Length - 1]);
+        Debug.Log("Das letzte Element von array4 hatt den Wert: " + array4[array4.Length - 1]);
         Debug.Log("Name letztes GO: " + arrayColloredIamgesRed[arrayColloredIamgesRed.Length - 1].name);
 
         PrintElemnts(array4);
